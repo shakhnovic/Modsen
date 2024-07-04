@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Project created as a part of Modsen course "Python Practice HTTP"
+  h2 List of endpoints: 
+  ul
+    li GET / - this page
+    li POST / - example post request
+    li PATCH / - example patch request
+    li PUT / - example put request
+    li DELETE / - example delete request
+    li GET /hello - returns "Hello, World!"
+    li GET /weather/city/:name - Fetch weather data by city name.
+    li GET /weather/cityid/:id - Fetch weather data by city ID.
+    li GET /weather/coordinates?lat=latitude&lon=longitude - Fetch weather data by geographic coordinates.
